@@ -17,7 +17,7 @@ public class Ground_checker : MonoBehaviour
     {
 
         _player.tocaSuelo = true;
-        _player.animatronix.SetBool("POV: Vienes de marruecos por melilla", false);
+        _player.animatronix.SetBool("Salto", false);
 
     }
 

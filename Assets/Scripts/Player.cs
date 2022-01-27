@@ -39,23 +39,23 @@ public class Player : MonoBehaviour
          if(dirx == -1)
         {
             renderer.flipX = true;
-            animatronix.SetBool("POV: te para la policia y llevas yerba", true);
+            animatronix.SetBool("Running", true);
         }
         else if(dirx == 1)
         {
             renderer.flipX = false;
-            animatronix.SetBool("POV: te para la policia y llevas yerba", true);
+            animatronix.SetBool("Running", true);
         }
         else
         {
-            animatronix.SetBool("POV: te para la policia y llevas yerba", false);
+            animatronix.SetBool("Running", false);
         }
         
         if(Input.GetButtonDown("Jump") && tocaSuelo) 
         {
 
             rBody.AddForce(Vector2.up * jumpforce, ForceMode2D.Impulse); 
-            animatronix.SetBool("POV: Vienes de marruecos por melilla", true);
+            animatronix.SetBool("Salto", true);
 
         }
 
